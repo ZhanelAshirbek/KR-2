@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/dairy#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/dairy#Processing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#isRegulatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/dairy#Milk"/>
+    <rdfs:range rdf:resource="http://example.org/dairy#QualityControl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#consumesFeed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/dairy#Cattle"/>
+    <rdfs:range rdf:resource="http://example.org/dairy#Feed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#isProcessedInto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/dairy#Milk"/>
+    <rdfs:range rdf:resource="http://example.org/dairy#Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#producesMilk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/dairy#Cattle"/>
+    <rdfs:range rdf:resource="http://example.org/dairy#Milk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#MilkBatch1">
+    <rdf:type rdf:resource="http://example.org/dairy#Milk"/>
+    <ex:isProcessedInto rdf:resource="http://example.org/dairy#Pasteurization"/>
+    <ex:isRegulatedBy rdf:resource="http://example.org/dairy#QualityStandard1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#Pasteurization">
+    <rdf:type rdf:resource="http://example.org/dairy#Processing"/>
+    <ex:isDistributedBy rdf:resource="http://example.org/dairy#SupplyChain1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#hasCattle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/dairy#DairyFarm"/>
+    <rdfs:range rdf:resource="http://example.org/dairy#Cattle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#Feed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#QualityControl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#Cattle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#QualityStandard1">
+    <rdf:type rdf:resource="http://example.org/dairy#QualityControl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#isDistributedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/dairy#Processing"/>
+    <rdfs:range rdf:resource="http://example.org/dairy#SupplyChain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#SupplyChain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#DairyFarm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#Milk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#Farm1">
+    <rdf:type rdf:resource="http://example.org/dairy#DairyFarm"/>
+    <ex:hasCattle rdf:resource="http://example.org/dairy#Cow1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#Cow1">
+    <rdf:type rdf:resource="http://example.org/dairy#Cattle"/>
+    <ex:producesMilk rdf:resource="http://example.org/dairy#MilkBatch1"/>
+    <ex:consumesFeed rdf:resource="http://example.org/dairy#GrassFeed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#SupplyChain1">
+    <rdf:type rdf:resource="http://example.org/dairy#SupplyChain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dairy#GrassFeed">
+    <rdf:type rdf:resource="http://example.org/dairy#Feed"/>
+  </rdf:Description>
+</rdf:RDF>
