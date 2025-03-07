@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/AshirbekZhanel/dairyproduction-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/AshirbekZhanel/dairyproduction-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/AshirbekZhanel/dairyproduction-ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Butter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cattle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cheese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeseMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DairyFarm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DairyProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homogenization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Packaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pasteurization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RetailStores"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupplyChain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yogurt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YogurtProduction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consumesFeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#delivering"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCattle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessedInto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#packaging"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producesMilk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#destination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#expirationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transportationDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cow1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Holstein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarchDelivery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SupermarketAldi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yogurtVanila"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breed"/>
+        <Class IRI="#Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butter"/>
+        <Class IRI="#DairyProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheese"/>
+        <Class IRI="#DairyProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeseMaking"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grain"/>
+        <Class IRI="#Feed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grass"/>
+        <Class IRI="#Feed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hay"/>
+        <Class IRI="#Feed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthStatus"/>
+        <Class IRI="#Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homogenization"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Packaging"/>
+        <Class IRI="#SupplyChain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pasteurization"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RetailStores"/>
+        <Class IRI="#SupplyChain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transportation"/>
+        <Class IRI="#SupplyChain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yogurt"/>
+        <Class IRI="#DairyProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YogurtProduction"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Cattle"/>
+        <NamedIndividual IRI="#Cow1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DairyFarm"/>
+        <NamedIndividual IRI="#Farm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breed"/>
+        <NamedIndividual IRI="#Holstein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transportation"/>
+        <NamedIndividual IRI="#MarchDelivery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RetailStores"/>
+        <NamedIndividual IRI="#SupermarketAldi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yogurt"/>
+        <NamedIndividual IRI="#yogurtVanila"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreed"/>
+        <NamedIndividual IRI="#Cow1"/>
+        <NamedIndividual IRI="#Holstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#Farm"/>
+        <NamedIndividual IRI="#yogurtVanila"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#delivering"/>
+        <NamedIndividual IRI="#MarchDelivery"/>
+        <NamedIndividual IRI="#SupermarketAldi"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#destination"/>
+        <NamedIndividual IRI="#MarchDelivery"/>
+        <Literal>SupermarketAldi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transportationDate"/>
+        <NamedIndividual IRI="#MarchDelivery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-28T10:30:00+02:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#expirationDate"/>
+        <NamedIndividual IRI="#yogurtVanila"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-28T10:30:00+02:00</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consumesFeed"/>
+        <Class IRI="#Cattle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#delivering"/>
+        <Class IRI="#Transportation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreed"/>
+        <Class IRI="#Cattle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCattle"/>
+        <Class IRI="#DairyFarm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProcessedInto"/>
+        <Class IRI="#Milk"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#packaging"/>
+        <Class IRI="#Packaging"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#DairyFarm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producesMilk"/>
+        <Class IRI="#Cattle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consumesFeed"/>
+        <Class IRI="#Feed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#delivering"/>
+        <Class IRI="#RetailStores"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreed"/>
+        <Class IRI="#Breed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCattle"/>
+        <Class IRI="#Cattle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProcessedInto"/>
+        <Class IRI="#DairyProducts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#packaging"/>
+        <Class IRI="#DairyProducts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#DairyProducts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producesMilk"/>
+        <Class IRI="#Milk"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#destination"/>
+        <Class IRI="#RetailStores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#expirationDate"/>
+        <Class IRI="#DairyProducts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportationDate"/>
+        <Class IRI="#Transportation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#destination"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#expirationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transportationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consumesFeed</IRI>
+        <Literal>Describes that cattle consume feed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#delivering</IRI>
+        <Literal>The transportation stage transports dairy products to supermarkets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCattle</IRI>
+        <Literal>Indicates that the dairy farm has cattle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProcessedInto</IRI>
+        <Literal>indicates that the milk is processed into dairy products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#packaging</IRI>
+        <Literal>The packaging stage packs dairy products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#produces</IRI>
+        <Literal>farm produce dairy product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#producesMilk</IRI>
+        <Literal>Cows produce milk</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
