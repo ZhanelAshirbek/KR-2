@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/AshirbekZhanel/dairyproductontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/AshirbekZhanel/dairyproductontology">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="ex" IRI="http://example.org/dairy#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ex:DairyFarm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ex:Feed"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ex:Milk"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ex:Processing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ex:SupplyChain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Breed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Butter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Cheese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#CheeseMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Grain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Hay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#HealthStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Homogenization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Packaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Pasteurization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#RetailStores"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Yogurt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#YogurtProduction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ex:consumesFeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ex:hasCattle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ex:isProcessedInto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ex:producesMilk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#delivering"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#packaging"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#destination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#expirationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transportationDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cow1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Holstein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarchDellivery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SupermarketAldi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YogurtVanila"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Breed"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Butter"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Cheese"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#CheeseMaking"/>
+        <Class abbreviatedIRI="ex:Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Grain"/>
+        <Class abbreviatedIRI="ex:Feed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Grass"/>
+        <Class abbreviatedIRI="ex:Feed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Hay"/>
+        <Class abbreviatedIRI="ex:Feed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#HealthStatus"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Homogenization"/>
+        <Class abbreviatedIRI="ex:Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Packaging"/>
+        <Class abbreviatedIRI="ex:SupplyChain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Pasteurization"/>
+        <Class abbreviatedIRI="ex:Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#RetailStores"/>
+        <Class abbreviatedIRI="ex:SupplyChain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Transportation"/>
+        <Class abbreviatedIRI="ex:SupplyChain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Yogurt"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#YogurtProduction"/>
+        <Class abbreviatedIRI="ex:Processing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ex:Cattle"/>
+        <NamedIndividual IRI="#Cow1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ex:DairyFarm"/>
+        <NamedIndividual IRI="#Farm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Breed"/>
+        <NamedIndividual IRI="#Holstein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Transportation"/>
+        <NamedIndividual IRI="#MarchDellivery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#RetailStores"/>
+        <NamedIndividual IRI="#SupermarketAldi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+        <NamedIndividual IRI="#YogurtVanila"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreed"/>
+        <NamedIndividual IRI="#Cow1"/>
+        <NamedIndividual IRI="#Holstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+        <NamedIndividual IRI="#Farm"/>
+        <NamedIndividual IRI="#YogurtVanila"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#destination"/>
+        <NamedIndividual IRI="#MarchDellivery"/>
+        <Literal>RetailStore1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transportationDate"/>
+        <NamedIndividual IRI="#MarchDellivery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-28T10:30:00+02:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#expirationDate"/>
+        <NamedIndividual IRI="#YogurtVanila"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-28T10:30:00+02:00</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreed"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ex:consumesFeed"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ex:hasCattle"/>
+        <Class abbreviatedIRI="ex:DairyFarm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ex:isProcessedInto"/>
+        <Class abbreviatedIRI="ex:Milk"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ex:producesMilk"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#delivering"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Transportation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#packaging"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Packaging"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+        <Class abbreviatedIRI="ex:DairyFarm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreed"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Breed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ex:consumesFeed"/>
+        <Class abbreviatedIRI="ex:Feed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ex:hasCattle"/>
+        <Class abbreviatedIRI="ex:Cattle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ex:isProcessedInto"/>
+        <Class abbreviatedIRI="ex:Processing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ex:producesMilk"/>
+        <Class abbreviatedIRI="ex:Milk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#delivering"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#RetailStores"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#packaging"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#transportationDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#destination"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#RetailStores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#expirationDate"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#DairyProducts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportationDate"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Transportation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#destination"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#expirationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transportationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ex:consumesFeed</AbbreviatedIRI>
+        <Literal>Describes that cattle consume feed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ex:hasCattle</AbbreviatedIRI>
+        <Literal>Indicates that the dairy farm has cattle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ex:isProcessedInto</AbbreviatedIRI>
+        <Literal>indicates that the milk is processed into dairy products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ex:producesMilk</AbbreviatedIRI>
+        <Literal>Cows produce milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#delivering</IRI>
+        <Literal>The transportation stage transports dairy products to supermarkets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#packaging</IRI>
+        <Literal>The packaging stage packs dairy products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#produces</IRI>
+        <Literal>farm produce dairy product</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
