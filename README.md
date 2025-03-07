@@ -1,7 +1,7 @@
 # Ontology for Dairy Production
 
 ## Description
-This ontology represents the structure of a dairy production system. It includes dairy farm, cattle, milk production, feed, processing, supply chain classes.
+This ontology represents the structure of a dairy production system using Protege application. It includes dairy farm, cattle, milk production, feed, processing, supply chain classes. Object properties (e.g., hasCattle, producesMilk, isProcessedInto) establish relationships between these concepts, while data properties (e.g., expirationDate, transportationDate) store relevant attributes.
 
 ## Classes 
 Below is an explanation of every declared class:
