@@ -23,8 +23,8 @@ Below is an explanation of every declared class:
 
 ## Data Properties
 - **destination**: 
-Domain: RetailStores
-Range: xsd:string
+Domain: RetailStores  
+Range: xsd:string  
 A simple data property that stores the textual name of the retail stores.
 - **expirationDate**:
 Domain: DairyProducts
