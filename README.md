@@ -22,17 +22,17 @@ Below is an explanation of every declared class:
 - **produces**: Means Dairy farm produce dairy products.
 
 ## Data Properties
-- **destination**: 
+- **destination**:   
 Domain: RetailStores  
 Range: xsd:string  
 A simple data property that stores the textual name of the retail stores.
-- **expirationDate**:
-Domain: DairyProducts
-Range: xsd:dateTime
+- **expirationDate**:  
+Domain: DairyProducts  
+Range: xsd:dateTime  
 A simple data property that stores the expiration date of products.
-- **transportationDate**:
-Domain: Transportation
-Range: xsd:dateTime
+- **transportationDate**:  
+Domain: Transportation  
+Range: xsd:dateTime  
 A simple data property that stores the transportation date.
 
 
