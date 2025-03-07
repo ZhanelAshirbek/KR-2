@@ -1,33 +1,41 @@
 # Ontology for Dairy Production
 
 ## Description
-This ontology represents the structure of a dairy production system. It includes dairy farms, cattle, milk production, feed, processing, supply chain, and quality control.
+This ontology represents the structure of a dairy production system. It includes dairy farm, cattle, milk production, feed, processing, supply chain classes.
 
-## Classes (TBox)
-- **DairyFarm**: Represents a dairy farm.
-- **Cattle**: Represents cows and livestock.
-- **Milk**: Represents produced milk.
-- **Feed**: Represents different types of cattle feed.
-- **Processing**: Represents milk processing stages.
-- **SupplyChain**: Represents the distribution system.
-- **QualityControl**: Represents regulatory standards.
+## Classes 
+Below is an explanation of every declared class:
+- **DairyFarm**: Represents a dairy farm. 
+- **Cattle**: Represents cows. Has subclasses such as: Age, Breed and Health status.
+- **Milk**: Represents produced milk. 
+- **Feed**: Represents different types of cattle feed. 
+- **Processing**: Represents milk processing stages with subclasses like Pasteurization, Homogenization, Cheese making, Yogurt production.
+- **SupplyChain**: Represents the distribution system which devided to Packaging, Transportation, Retailstores subclasses.
+- **DairyProducts**:  Represents the produced products.
 
-## Properties
-- **hasCattle**: Dairy farm has cattle.
-- **producesMilk**: Cattle produce milk.
-- **consumesFeed**: Cattle consume feed.
-- **isProcessedInto**: Milk is processed.
-- **isDistributedBy**: Processed milk is distributed.
-- **isRegulatedBy**: Milk quality is controlled.
+## Object Properties
+- **hasCattle**: Means Dairy farm has cattle.
+- **producesMilk**: Means Cattle produce milk.
+- **consumesFeed**: Means Cattle consume feed.
+- **isProcessedInto**: Means Milk is processed into dairy products.
+- **delivering**: Means Dairy products delivery.
+- **produces**: Means Dairy farm produce dairy products.
 
-## Instances (ABox)
-- `Farm1` (DairyFarm) has `Cow1` (Cattle).
-- `Cow1` produces `MilkBatch1` (Milk).
-- `Cow1` consumes `GrassFeed` (Feed).
-- `MilkBatch1` is processed into `Pasteurization` (Processing).
-- `Pasteurization` is distributed by `SupplyChain1` (SupplyChain).
-- `MilkBatch1` is regulated by `QualityStandard1` (QualityControl).
+## Data Properties
+- **destination**: 
+Domain: RetailStores
+Range: xsd:string
+A simple data property that stores the textual name of the retail stores.
+- **expirationDate**:
+Domain: DairyProducts
+Range: xsd:dateTime
+A simple data property that stores the expiration date of products.
+- **transportationDate**:
+Domain: Transportation
+Range: xsd:dateTime
+A simple data property that stores the transportation date.
 
-## Usage
-This ontology can be used for AI-driven dairy farm management, milk quality tracking, and supply chain optimization.
+
+
+
 
