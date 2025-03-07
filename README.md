@@ -36,6 +36,7 @@ Range: xsd:dateTime
 A simple data property that stores the transportation date.
 
 
+Graphical view of ontology: ![image](https://github.com/user-attachments/assets/ad6a018c-84c3-4204-a9eb-06ee69c39ec3)
 
 
 
